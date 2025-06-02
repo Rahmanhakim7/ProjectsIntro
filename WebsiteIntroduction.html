@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profil Diri</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Halo! Aku Rahman Hakim</h1>
+    <img src="rahmanhakim.jpg" alt="Foto Profil" />
+    <p>Aku suka belajar coding dan bermain game. Aku ingin menjadi programmer handal suatu hari nanti!</p>
+
+    <button id="salamBtn">Klik untuk Salam</button>
+    <p id="pesanSalam" style="font-weight: bold; color: green; margin-top: 15px"></p>
+    <div class="sosial-media">
+      <h2>Temui Aku di Sosial Media</h2>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://youtube.com/@xiimipa3rahmanhakim372?si=ae2KNR_CrzmAPSSR" target="_blank">YouTube</a> |
+      <a href="https://github.com/Rahmanhakim7" target="_blank">GitHub</a>
+    </div>
+
+    <script>
+      const tombolSalam = document.getElementById('salamBtn');
+      const pesanSalam = document.getElementById('pesanSalam');
+      let ditampilkan = false;
+
+      tombolSalam.addEventListener('click', function () {
+        if (ditampilkan) {
+          pesanSalam.textContent = ''; 
+        } else {
+          pesanSalam.textContent = 'Halo, semangat belajar coding ya!'; // tampilkan pesan
+        }
+        ditampilkan = !ditampilkan; 
+      });
+    </script>
+  </body>
+</html>
