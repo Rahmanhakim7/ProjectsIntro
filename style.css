@@ -54,3 +54,21 @@ button:hover {
 .sosial-media a:hover {
   color: #0056b3;
 }
+
+
+header  {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+

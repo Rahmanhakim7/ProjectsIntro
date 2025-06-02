@@ -3,23 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="iconintro.png" type="image/x-icon">
+    <link rel="icon" href="iconintro.png" type="image/x-icon" />
     <title>Profil Diri</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Biodata Website</header>
-    <h1>Halo! Aku Rahman Hakim</h1>
-    <img src="rahmanhakim.jpg" alt="Foto Profil" />
-    <p>Aku suka belajar coding dan bermain game. Aku ingin menjadi programmer handal suatu hari nanti!</p>
+    <header class="header">
+      <h1>Biodata Website</h1>
+    </header>
+    <main>
+      <h1>Halo! Aku Rahman Hakim</h1>
+      <img src="rahmanhakim.jpg" alt="Foto Profil" />
+      <p>Aku suka belajar coding dan bermain game. Aku ingin menjadi programmer handal suatu hari nanti!</p>
 
-    <button id="salamBtn">Klik untuk Salam</button>
-    <p id="pesanSalam" style="font-weight: bold; color: green; margin-top: 15px"></p>
-    <div class="sosial-media">
-      <h2>Temui Aku di Sosial Media</h2>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://youtube.com/@xiimipa3rahmanhakim372?si=ae2KNR_CrzmAPSSR" target="_blank">YouTube</a> |
-      <a href="https://github.com/Rahmanhakim7" target="_blank">GitHub</a>
-    </div>
+      <button id="salamBtn">Klik untuk Salam</button>
+      <p id="pesanSalam" style="font-weight: bold; color: green; margin-top: 15px"></p>
+      <div class="sosial-media">
+        <h2>Temui Aku di Sosial Media</h2>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> | <a href="https://youtube.com/@xiimipa3rahmanhakim372?si=ae2KNR_CrzmAPSSR" target="_blank">YouTube</a> |
+        <a href="https://github.com/Rahmanhakim7" target="_blank">GitHub</a>
+      </div>
+    </main>
+    <footer style="margin-top: 40px; padding: 20px; background-color: #f2f2f2; text-align: center; color: #555">
+      <p>&copy; 2025 Rahman Hakim. Semua hak dilindungi.</p>
+      <p>Terima kasih telah mengunjungi website saya!</p>
+    </footer>
 
     <script>
       const tombolSalam = document.getElementById('salamBtn');
@@ -28,11 +36,11 @@
 
       tombolSalam.addEventListener('click', function () {
         if (ditampilkan) {
-          pesanSalam.textContent = ''; 
+          pesanSalam.textContent = '';
         } else {
-          pesanSalam.textContent = 'Halo, semangat belajar coding ya!'; 
+          pesanSalam.textContent = 'Halo, semangat belajar coding ya!';
         }
-        ditampilkan = !ditampilkan; 
+        ditampilkan = !ditampilkan;
       });
     </script>
   </body>
