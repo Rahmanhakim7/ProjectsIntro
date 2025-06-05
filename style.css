@@ -1,74 +1,95 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  background-color: #f0f8ff;
+  background: white;
   padding: 20px;
+  margin: 0;
+}
+
+header {
+  background: blue;
+  color: white;
+  padding: 25px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+}
+
+main h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 img {
-  width: 300px;
-  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-h1 {
-  color: #333;
+img:hover {
+  transform: scale(1.05);
 }
 
 p {
   color: #555;
   font-size: 18px;
+  max-width: 600px;
+  margin: 10px auto 20px;
 }
 
 button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 16px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .sosial-media {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .sosial-media h2 {
   color: #333;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .sosial-media a {
   color: #007bff;
   text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
+  font-weight: 600;
+  margin: 0 12px;
+  transition: color 0.3s;
 }
 
 .sosial-media a:hover {
   color: #0056b3;
 }
 
-
-header  {
-  background-color: #007bff;
-  color: white;
-  padding: 20px 0;
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f2f2f2;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 30px;
+  color: #666;
+  font-size: 14px;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
