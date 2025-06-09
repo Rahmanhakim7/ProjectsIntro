@@ -32,7 +32,6 @@ img {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
 }
 
 img:hover {
@@ -63,17 +62,13 @@ button:hover {
   transform: scale(1.05);
 }
 
-.sosial-media {
-  margin-top: 40px;
-}
-
-.sosial-media h2 {
+h3 {
   color: #333;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.sosial-media a {
+a {
   color: #007bff;
   text-decoration: none;
   font-weight: 600;
