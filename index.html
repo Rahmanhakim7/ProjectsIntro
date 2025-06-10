@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
   <head>
     <title>Profile Biodata</title>
     <link rel="shortcut icon" href="iconintro.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      h4,
+      p {
+        color: blue;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Biodata Website</h1>
     </header>
     <main>
-      <h2>Rahman Hakim</h2>
+      <h2 class="nama">Rahman Hakim</h2>
+
       <img src="rahmanhakim.jpg" alt="Foto Profil" />
-      <p>Aku suka belajar coding dan bermain game. Aku ingin menjadi programmer handal suatu hari nanti!</p>
-
-      <button id="salamBtn">Klik untuk Salam</button>
-      <p id="pesanSalam" style="font-weight: bold; color: green; margin-top: 15px"></p>
-
-      <h3>Temui Aku di Sosial Media</h3>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
       <br />
-      <a href="https://youtube.com/@xiimipa3rahmanhakim372?si=ae2KNR_CrzmAPSSR" target="_blank">YouTube</a>
+      <button id="salamBtn">Klik untuk Salam</button>
+      <p id="pesanSalam"></p>
+      <h3>Temui Aku di Sosial Media</h3>
+      <div class="social-media">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://youtube.com/" target="_blank">YouTube</a>
+      </div>
     </main>
-    
+
     <footer>
-      <p>2025 Rahman Hakim</p>
-      <p>Terima kasih telah mengunjungi website saya!</p>
+      <p style="color: white">2025 Rahman Hakim</p>
+      <p style="color: white">Terima kasih telah mengunjungi website saya!</p>
     </footer>
 
-    <script>
-      const tombolSalam = document.getElementById('salamBtn');
-      const pesanSalam = document.getElementById('pesanSalam');
-
-      tombolSalam.addEventListener('click', function () {
-        pesanSalam.textContent = 'Halo, semangat belajar coding ya!';
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

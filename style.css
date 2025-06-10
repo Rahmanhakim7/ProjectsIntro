@@ -1,48 +1,50 @@
 body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  background: white;
-  padding: 20px;
+  padding: 20px 150px;
   margin: 0;
 }
 
 header {
-  background: blue;
+  background: #1e90ff;
   color: white;
-  padding: 25px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 40px;
   margin-bottom: 40px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 34px;
   letter-spacing: 1.5px;
 }
 
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 4px 20px;
+}
+
 main h2 {
-  font-size: 26px;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 28px;
+  color: black;
 }
 
 img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
 
 img:hover {
   transform: scale(1.05);
-}
-
-p {
-  color: #555;
-  font-size: 18px;
-  max-width: 600px;
-  margin: 10px auto 20px;
+  cursor: pointer;
 }
 
 button {
@@ -62,29 +64,46 @@ button:hover {
   transform: scale(1.05);
 }
 
+#pesanSalam {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #11aa03;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.5s ease;
+}
+
 h3 {
   color: #333;
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 22px;  
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 a {
   color: #007bff;
   text-decoration: none;
-  font-weight: 600;
-  margin: 0 12px;
-  transition: color 0.3s;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
-.sosial-media a:hover {
-  color: #0056b3;
+a:hover {
+  background-color: #007bff;
+  color: white;
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: #1e90ff;
   text-align: center;
-  color: #666;
+  color: white;
   font-size: 14px;
 }
