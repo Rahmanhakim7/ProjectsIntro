@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Profile Biodata</title>
+    <meta charset="UTF-8">
+    <title>Biodata Diri</title>
     <link rel="shortcut icon" href="iconintro.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      h4,
-      p {
-        color: blue;
-      }
-    </style>
+    
   </head>
+
   <body>
     <header>
       <h1>Biodata Website</h1>
     </header>
     <main>
-      <h2 class="nama">Rahman Hakim</h2>
-
+      <h2>Rahman Hakim</h2>
       <img src="rahmanhakim.jpg" alt="Foto Profil" />
-      <br />
+      <br>
       <button id="salamBtn">Klik untuk Salam</button>
-      <p id="pesanSalam"></p>
+      <p id="pesanSalam">
+        
+      </p>
       <h3>Temui Aku di Sosial Media</h3>
       <div class="social-media">
         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
@@ -30,10 +28,16 @@
     </main>
 
     <footer>
-      <p style="color: white">2025 Rahman Hakim</p>
-      <p style="color: white">Terima kasih telah mengunjungi website saya!</p>
+      <p>&copy;2025 Rahman Hakim</p>
+      <p>Terima kasih telah mengunjungi website saya!</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+      const salamBtn = document.getelementById('salamBtn');
+      const pesanSalam = document.getelementById('pesanSalam');
+      salamBtn.addEventListener('click', () => {
+        pesanSalam.innerText = "Halo! Perkenalkan, namaku Rahman Hakim. Aku berasal dari Kota Tangerang Selatan. Hobiku adalah berolahraga, terutama bermain sepak bola. Selain itu, aku juga sangat suka belajar coding karena aku ingin menjadi seorang programmer yang hebat di masa depan."
+      })
+    </script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: poppins, sans-serif;
   text-align: center;
   padding: 20px 150px;
   margin: 0;
@@ -61,7 +61,6 @@ button {
 
 button:hover {
   background-color: #0056b3;
-  transform: scale(1.05);
 }
 
 #pesanSalam {
